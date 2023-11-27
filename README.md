@@ -22,3 +22,5 @@ Host someinternalhost
   hostname 10.128.0.25
   user appuser
   proxyjump bastion
+
+test
