@@ -4,27 +4,21 @@ Guzzel Infra repository
 HW3
 
 Данные для подключения:
-bastion_IP = 158.160.41.170
-someinternalhost_IP = 10.128.0.25
+bastion_IP = 158.160.118.135
+someinternalhost_IP = 10.128.0.18
 
 Способ подключения к someinternalhost в одну команду:
-ssh -J appuser@158.160.41.170 appuser@10.128.0.25
+ssh -J appuser@158.160.118.135 appuser@10.128.0.18
 
 Способ подключения из консоли по алиасу someinternalhost:
 Добавляем настройки в ~/.ssh/config:
 Host bastion
   user appuser
   IdentityFile ~/.ssh/appuser
-  hostname 158.160.41.170
+  hostname 158.160.118.135
 
 Host someinternalhost
   IdentityFile ~/.ssh/appuser
-  hostname 10.128.0.25
+  hostname 10.128.0.18
   user appuser
   proxyjump bastion
-
-test
-test2
-test3
-test4
-test5
