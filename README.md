@@ -66,3 +66,10 @@ puma -d
 
 testapp_IP = 158.160.109.149
 testapp_port = 9292
+
+HW5 "Сборка образов VM приСборка образов VM при помощи Packerпомощи Packer"
+
+1) Создан сервисный аккаунта для Packer в Yandex.Cloud
+2) Создан файл-шаблона Packer ubuntu16.json
+3) Создан образ reddit-base-1706002106 в Yandex.Cloud
+4) Создан файл переменных variables.json
