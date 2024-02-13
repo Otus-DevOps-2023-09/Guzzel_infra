@@ -1,0 +1,8 @@
+{
+   "id": "aje0rdto13iosacq89nv",
+   "service_account_id": "ajeanevho7447k8gchs1",
+   "created_at": "2024-01-14T14:11:24.257779595Z",
+   "key_algorithm": "RSA_2048",
+   "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArcpfmH15UHFD3g1Jz11q\nluuxrYTg1OlO+5LNm3Q6e9ph88dhi1B1C1dG1bcyr+RW3M1IZX2rNs+HMwIwPql4\n5k3mqN+vPWolFaqsCSeu3B3sG4F+R99X5wtKVozz2ZpXRDt1Q+kFeWImk3QIaYOJ\nbvPBdjVYTo/P94iK1QtsGihajVERGTjPH3+oMkxMgHLAv6NkJghni/piTW9tN5m1\nkt9l94unstwpVJ2qJHJ/SunCXRnOgB0sUE1O4fXgzYgHaNeeN99yuxoEIjwUfGCy\neNMnZdNl2QZHgBjYc+Pzq7SqvFj2uKV0Q+kpklrzi1h1+90YeAeijQuZjsIzT2ud\nuQIDAQAB\n-----END PUBLIC KEY-----\n",
+   "private_key": "PLEASE DO NOT REMOVE THIS LINE! Yandex.Cloud SA Key ID \u003caje0rdto13iosacq89nv\u003e\n-----BEGIN PRIVATE KEY-----\nMIIEv*************XTx\nrwa1Czd3wAo/LexRJ/oUGDYe\n-----END PRIVATE KEY-----\n"
+}
