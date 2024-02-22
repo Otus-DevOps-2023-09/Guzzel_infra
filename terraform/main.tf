@@ -44,7 +44,7 @@ resource "yandex_compute_instance" "app" {
     user  = "ubuntu"
     agent = false
     # путь до приватного ключа
-    private_key = file("/home/guzel/.ssh/ubuntu")
+    private_key = var.private_key
   }
 
   provisioner "file" {
