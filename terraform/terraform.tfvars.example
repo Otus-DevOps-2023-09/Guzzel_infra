@@ -1,0 +1,8 @@
+image_id                 = "*"
+cloud_id                 = "*"
+folder_id                = "*"
+zone                     = "*"
+service_account_key_file = "*"
+subnet_id                = "*"
+public_key_path          = "*"
+resource_zone            = "*"
