@@ -28,3 +28,8 @@ variable "resource_zone" {
   # Значение по умолчанию
   default = "ru-central1-a"
 }
+
+variable "private_key" {
+  description = "ubuntu"
+  # Значение по умолчанию
+}
