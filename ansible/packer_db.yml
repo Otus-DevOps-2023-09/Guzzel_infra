@@ -1,0 +1,15 @@
+---
+- name: Install mongodb
+  become: true
+  hosts: db
+  tasks:
+  - name: Get mongodb
+    apt:
+      name: mongodb
+      state: present
+      update_cache: true
+  - name: start mongodb
+    systemd:
+      name: mongodb
+      enabled: true
+      state: started
