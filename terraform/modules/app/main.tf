@@ -1,11 +1,11 @@
-#terraform {
-#  required_providers {
-#    yandex = {
-#      source = "yandex-cloud/yandex"
-#    }
-#  }
-#  required_version = ">= 0.13"
-#}
+terraform {
+  required_providers {
+    yandex = {
+      source = "yandex-cloud/yandex"
+    }
+  }
+  required_version = ">= 0.13"
+}
 
 resource "yandex_compute_instance" "app" {
   name = "reddit-app"
@@ -35,38 +35,31 @@ resource "yandex_compute_instance" "app" {
   }
 }
 
+#resource "yandex_vpc_security_group" "test-sg" {
+#  name        = "My security group"
+#  description = "description for my security group"
+#  network_id  = yandex_vpc_network.test-vpc.id
 
-
-#  connection {
-#    type  = "ssh"
-#    host  = yandex_compute_instance.app.network_interface.0.nat_ip_address
-#    user  = "ubuntu"
-#    agent = false
-#    private_key = file("/home/guzel/.ssh/ubuntu")
-# }
-
-#  provisioner "file" {
-#    source      = "files/puma.service"
-#    destination = "/tmp/puma.service"
+#  labels = {
+#    my-label = "my-label-value"
 #  }
 
-#  provisioner "remote-exec" {
-#    script = "files/deploy.sh"
+#  dynamic "ingress" {
+#    for_each = ["80", "8080"]
+#    content {
+#      protocol       = "TCP"
+#      description    = "rule1 description"
+#      v4_cidr_blocks = ["0.0.0.0/0"]
+#      from_port      = ingress.value
+#      to_port        = ingress.value
+#    }
 #  }
 
-#  network_interface {
-#    subnet_id = yandex_vpc_subnet.app-subnet.id
-#    nat = true
+#  egress {
+#    protocol       = "ANY"
+#    description    = "rule2 description"
+#    v4_cidr_blocks = ["0.0.0.0/0"]
+#    from_port      = 0
+#    to_port        = 65535
 #  }
-#}
-
-
-#resource "yandex_vpc_network" "app-network" {
-#name = "reddit-app-network"
-#}
-#resource "yandex_vpc_subnet" "app-subnet" {
-#name = "reddit-app-subnet"
-#zone = "ru-central1-a"
-#network_id = "${yandex_vpc_network.app-network.id}"
-#v4_cidr_blocks = ["192.168.10.0/24"]
 #}
