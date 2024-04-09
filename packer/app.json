@@ -2,7 +2,7 @@
     "builders": [
         {
             "type": "yandex",
-            "service_account_key_file": "/home/dom/.ssh/key.json",
+            "service_account_key_file": "key.json",
             "folder_id": "b1gc1f173upk216e0nou",
             "source_image_family": "ubuntu-1604-lts",
             "image_name": "reddit-base-{{timestamp}}",
@@ -15,7 +15,7 @@
     "provisioners": [
         {
             "type": "ansible",
-            "playbook_file": "/home/dom/Guzzel_infra/ansible/playbooks/packer_app.yml"
+            "playbook_file": "ansible/playbooks/packer_app.yml"
         }
     ]
 }
