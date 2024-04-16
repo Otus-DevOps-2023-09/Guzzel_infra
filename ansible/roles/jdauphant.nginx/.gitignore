@@ -1,0 +1,4 @@
+/.idea
+### Vagrant ###
+.vagrant/
+jdauphant.nginx

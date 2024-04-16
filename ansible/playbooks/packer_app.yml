@@ -1,5 +1,5 @@
 - name: Install Ruby and Bundler
-  hosts: app
+  hosts: all
   become: true
   tasks:
   - name: Install ruby and rubygems and required packages
